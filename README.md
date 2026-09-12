@@ -1,2 +1,4 @@
 # Recuperatorio-Parcial-informatica-2
-Recuperatorio del segundo parcial de Informatica
+Gomez Maria luz
+Segundo Parcial- Informatica General
+Artes Multimediales- UNA
