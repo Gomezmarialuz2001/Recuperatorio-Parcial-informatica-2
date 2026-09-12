@@ -1,0 +1,160 @@
+/*------CONFIGURACIÓN GENERAL------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arvo", serif; /* Fuente Arvo aplicada a toda la página */
+    background-color: #256d85;
+    color: #dff6ff;
+    /*------FONDO DE PAGINA------*/
+    background-image: url('../img/fondo.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*------CONTENEDOR PRINCIPAL------*/
+#contenedor-principal {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border: 2px solid #256d85;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 95%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#contenedor-principal > header h1.titulo {
+    color: #06283d;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+#contenedor-principal > header .subtitulo {
+    color: #256d85;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+    
+/*------DISEÑO DE COLUMNAS (PÁGINA 1)------*/
+.pagina1 {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.pagina1 > .columna {
+    flex: 1;
+    min-width: 200px;
+    background-color: #dff6ff;
+    border: 1px solid #47b5ff;
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #06283d;
+}
+
+.pagina1 > .columna h1.titulo {
+    color: #06283d;
+    font-size: 1.2rem;
+}
+
+.pagina1 > .columna p,
+.pagina1 > .columna .cita {
+    color: #06283d;
+}
+
+.columna .imagen,
+.columna .imagen1 {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: 75% 25%; 
+    border-radius: 0.3rem;
+}
+
+.linea {
+    border: none;
+    border-top: 1px solid #256d85;
+    margin: 0.5rem 0;
+}
+
+/*------BARRA DE NAVEGACIÓN------*/
+nav {
+    border: none;
+    background-color: #256d85;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: none; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+nav li {
+    padding: 1rem;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    border: 0.2rem solid #06283d;
+    padding: 0.6rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
+}
+
+nav a:link {
+    transition: 200ms;
+    border: 0.2rem solid #47b5ff;
+    background-color: #47b5ff;
+    color: #06283d;
+}
+
+nav a:visited {
+    transition: 200ms;
+    border: 0.2rem solid #47b5ff;
+    background-color: #256d85;
+    color: #dff6ff;
+}
+
+nav a:hover {
+    transition: 200ms;
+    border: 0.2rem solid #06283d;
+    background-color: #dff6ff;
+    color: #06283d;
+}
+
+nav a:active {
+    transition: 100ms;
+    border: 0.2rem solid #dff6ff;
+    background-color: #06283d;
+    color: #dff6ff;
+}
+
+/*------PIE DE PÁGINA------*/
+.pie-de-pagina {
+    text-align: center;
+    margin-top: 2rem;
+    color: #06283d;
+    font-size: 0.9rem;
+}

@@ -2,27 +2,54 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"content="width=device-width, initial-scale=1.0">
-        <title>Inicio - Casey Reas | Arte Generativo y Software0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio - Casey Reas | Arte Generativo y Software</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
-        <div id="contenedor">
+        <div id="contenedor-principal">
+            <!-- Contenedor principal-->
             <header>
-                <img src="img/fondo.png"alt="fondo">
                 <h1 class="titulo">Casey Reas</h1>
+                <p class="subtitulo">Código, sistemas y arte generativo contemporáneo</p>
             </header>
-            <nav> 
+            <nav>
+                <!--Menu horizontal-->
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
                     <li><a href="trayectoria.html">Trayectoria</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
                 </ul>
-
             </nav>
-        </div> 
+            
+            <!--Contenido Principal-->
+            <main class="pagina1">
+                <section class="columna">
+                    <h1 class="titulo">Código, sistemas y arte generativo contemporáneo</h1>
+                    <img class="imagen" src="img/reas.jpg" alt="imagen casey reas">
+                    <p class="cita"><q><em>“Una obra puede ser definida como un sistema y ejecutada en múltiples formas.”</em></q>Casey Reas</p>
+                    <hr class="linea">
+                </section>
+                
+                <section class="columna">
+                    <h1 class="titulo">Arte generativo y pensamiento computacional</h1>
+                    <p>Casey Reas es un artista, programador y educador reconocido por su trabajo en el desarrollo del arte generativo. Su práctica se basa en la creación de sistemas que, a partir de reglas definidas, producen imágenes y comportamientos visuales autónomos. Este enfoque desplaza la idea tradicional de obra terminada hacia procesos abiertos y en constante evolución. Su trabajo se centra en la relación entre instrucciones, ejecución y resultado. A través del uso del código, construye estructuras que permiten explorar variaciones infinitas dentro de un mismo sistema. De este modo, cada ejecución puede dar lugar a una experiencia visual distinta. Además de su producción artística, ha tenido un rol clave en la difusión del pensamiento computacional dentro del arte contemporáneo. Su enfoque promueve la comprensión del código como un medio expresivo, accesible y profundamente creativo.</p>
+                </section>
+                
+                <section class="columna">
+                    <h1 class="titulo">Obra de arte digital generativo titulada Path</h1>
+                   <img class="imagen1" src="img/reas-2.jpg" alt="obra casey reas">
+                   <p class="cita"><q><em>Creada por el artista estadounidense Casey Reas en el año 2001</em></q></p>
+                </section>
+            </main>
+
+            <!--pie de pagina-->
+            <footer class="pie-de-pagina">
+                <address>@2026 Sitio biográfico sobre Casey Reas</address>
+            </footer>
+        </div>
     </body>
 </html>
