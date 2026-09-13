@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio - Casey Reas | Arte Generativo y Software</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/estilos.css">
-    </head>
-    <body>
-        <div id="contenedor-principal">
-            <!-- Contenedor principal-->
-            <header>
-                <h1 class="titulo">Casey Reas</h1>
-                <p class="subtitulo">Código, sistemas y arte generativo contemporáneo</p>
-            </header>
-            <nav>
-                <!--Menu horizontal-->
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="trayectoria.html">Trayectoria</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                </ul>
-            </nav>
-            
-            <!--Contenido Principal-->
+<head>
+    <meta charset="UTF-8">
+    <title>Trayectoria - Casey Reas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="contenedor-principal">
+        <header>
+            <h1 class="titulo">Casey Reas</h1>
+            <p class="subtitulo">Arte de Software y Sistemas Generativos</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="trayectoria.html">Trayectoria</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido Principal con Layout de 2 Columnas -->
+        <div class="trayectoria-layout">
+            <aside class="columna-secundaria">
+                <img src="img/reas-1.png" alt="Casey Reas obra" class="imagen-trayectoria">
+                <h1 class="titulo">Trayectoria y contribuciones</h1>
+                <p>Nacido en Estados Unidos, Casey Reas desarrolló su formación en diseño y medios digitales, consolidando una carrera que combina investigación, producción artística y docencia. Es ampliamente conocido por ser co-creador del lenguaje de programación Processing, junto a Ben Fry, una herramienta fundamental para artistas y diseñadores que trabajan con código. A lo largo de su trayectoria, su obra ha sido exhibida en museos, galerías y festivales internacionales. Sus proyectos exploran tanto sistemas digitales como su materialización en formatos físicos, ampliando las posibilidades del arte generativo. Su influencia se extiende también al ámbito educativo, donde ha contribuido a formar nuevas generaciones de artistas y desarrolladores. Su trabajo ha sido clave para establecer un puente entre el arte, el diseño y la programación.</p>
+                
+                <hr class="linea">
+
+                <div class="seccion-dato">
+                    <h1 class="titulo">¿Sabías qué?</h1>
+                    <p id="texto-curioso">Haz clic en el botón para descubrir un dato curioso al azar.</p>
+                    <button id="btn-curiosidad">Ver dato curioso</button>
+                </div>
+            </aside>
+
+            <main class="columna-principal">
+                <img src="img/reas-3.png" alt="Sistemas generativos de Casey Reas" class="imagen-trayectoria">
+                
+                <h1 class="titulo">Sistemas, reglas y variación</h1>
+                <p>El trabajo de Casey Reas se fundamenta en la idea de que una obra puede ser entendida como un sistema de reglas. Estas reglas definen las posibles interacciones entre los elementos visuales, permitiendo que la obra se genere a partir de su ejecución.</p>
+                <p>Este enfoque introduce la variación como un elemento central. Cada vez que el sistema se ejecuta, puede producir un resultado diferente, lo que transforma la noción de originalidad y repetición en el arte digital.</p>
+
+                <h1 class="titulo">El rol del artista-programador</h1>
+                <p>En la práctica de Reas, el artista asume el rol de programador. En lugar de intervenir directamente sobre la imagen final, diseña el conjunto de instrucciones que dará lugar a múltiples resultados posibles.</p>
+                <p>Este cambio de rol implica una forma distinta de pensar el proceso creativo. La autoría se desplaza hacia el diseño del sistema, mientras que la ejecución introduce elementos de autonomía y sorpresa en la obra.</p>
+
+                <h1 class="titulo">Influencia en el arte contemporáneo</h1>
+                <p>La obra de Casey Reas ha tenido un impacto significativo en el desarrollo del arte digital y generativo. Su enfoque ha contribuido a legitimar el uso del código como un medio artístico en el contexto contemporáneo.</p>
+                <p>Su influencia puede observarse en numerosos artistas y proyectos que adoptan el pensamiento basado en sistemas y algoritmos. A través de su trabajo, se ha ampliado la comprensión de las posibilidades del arte en relación con la tecnología.</p>
+
+                <hr class="linea">
+
+                <p><strong>Para contactarse escribir a:</strong> casey@artedigital.com</p>
+            </main>
+        </div>
+
+        <!-- Pie de página -->
+        <footer class="pie-de-pagina">
+            <address>@2026 Sitio biográfico sobre Casey Reas</address>
+        </footer>
+    </div>
+
+    <script src="js/script-trayectoria.js"></script>
+</body>
+</html>

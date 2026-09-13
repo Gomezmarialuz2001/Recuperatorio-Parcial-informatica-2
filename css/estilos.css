@@ -1,4 +1,4 @@
-/*------CONFIGURACIÓN GENERAL------*/
+/*------ CONFIGURACIÓN GENERAL ------*/
 * {
     padding: 0;
     margin: 0;
@@ -6,10 +6,9 @@
 }
 
 body {
-    font-family: "Arvo", serif; /* Fuente Arvo aplicada a toda la página */
+    font-family: sans-serif;
     background-color: #256d85;
     color: #dff6ff;
-    /*------FONDO DE PAGINA------*/
     background-image: url('../img/fondo.png');
     background-position: center;
     background-repeat: repeat;
@@ -18,7 +17,7 @@ body {
     justify-content: center;
 }
 
-/*------CONTENEDOR PRINCIPAL------*/
+/*------ CONTENEDOR PRINCIPAL ------*/
 #contenedor-principal {
     max-width: 1200px;
     margin: 2rem auto;
@@ -31,6 +30,7 @@ body {
 }
 
 #contenedor-principal > header h1.titulo {
+    font-family: "Arvo", serif;
     color: #06283d;
     text-align: center;
     margin-bottom: 1rem;
@@ -38,13 +38,14 @@ body {
 }
 
 #contenedor-principal > header .subtitulo {
+    font-family: "Arvo", serif;
     color: #256d85;
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
     
-/*------DISEÑO DE COLUMNAS (PÁGINA 1)------*/
+/*------ DISEÑO DE COLUMNAS (PÁGINA 1) ------*/
 .pagina1 {
     display: flex;
     gap: 2rem;
@@ -66,6 +67,7 @@ body {
 }
 
 .pagina1 > .columna h1.titulo {
+    font-family: "Arvo", serif;
     color: #06283d;
     font-size: 1.2rem;
 }
@@ -90,7 +92,67 @@ body {
     margin: 0.5rem 0;
 }
 
-/*------BARRA DE NAVEGACIÓN------*/
+/*------ LISTA CONCEPTOS CLAVE (INICIO) ------*/
+.lista-conceptos {
+    margin-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #06283d;
+}
+
+/*------ TRAYECTORIA ------*/
+.trayectoria-layout {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.trayectoria-layout > .columna-secundaria {
+    flex: 1;
+    min-width: 250px;
+    background-color: #dff6ff;
+    border: 1px solid #47b5ff;
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #06283d;
+}
+
+.trayectoria-layout > .columna-principal {
+    flex: 2;
+    min-width: 300px;
+    background-color: #dff6ff;
+    border: 1px solid #47b5ff;
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #06283d;
+}
+
+.trayectoria-layout h1.titulo {
+    font-family: "Arvo", serif;
+    color: #06283d;
+    font-size: 1.2rem;
+}
+
+.trayectoria-layout p {
+    color: #06283d;
+}
+
+.imagen-trayectoria {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+/*------ BARRA DE NAVEGACIÓN ------*/
 nav {
     border: none;
     background-color: #256d85;
@@ -113,6 +175,7 @@ nav li {
 }
 
 nav a {
+    font-family: "Arvo", serif;
     text-decoration: none;
     border: 0.2rem solid #06283d;
     padding: 0.6rem 2.5rem;
@@ -151,7 +214,81 @@ nav a:active {
     color: #dff6ff;
 }
 
-/*------PIE DE PÁGINA------*/
+/*------ GALERÍA ------*/
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.tarjeta-obra {
+    background-color: #dff6ff;
+    border: 1px solid #47b5ff;
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    color: #06283d;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.imagen-obra {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.imagen-obra.zoom-activo {
+    transform: scale(1.6);
+    cursor: zoom-out;
+    position: relative;
+    z-index: 10;
+}
+
+#boton {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.6rem 1.2rem;
+    background-color: #256d85;
+    color: #dff6ff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: "Arvo", serif;
+}
+
+#boton:hover {
+    background-color: #47b5ff;
+    color: #06283d;
+}
+
+/*------ BOTÓN DE CURIOSIDADES (TRAYECTORIA) ------*/
+#btn-curiosidad {
+    font-family: "Arvo", serif;
+    display: block;
+    margin: 1rem auto;
+    padding: 0.6rem 1.2rem;
+    background-color: #256d85;
+    color: #dff6ff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#btn-curiosidad:hover {
+    background-color: #47b5ff;
+    color: #06283d;
+}
+
+/*------ PIE DE PÁGINA ------*/
 .pie-de-pagina {
     text-align: center;
     margin-top: 2rem;
