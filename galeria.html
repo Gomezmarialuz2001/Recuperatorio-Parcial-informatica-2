@@ -24,16 +24,65 @@
                 </ul>
             </nav>
         
-            <!--Contenido Principal-->
+            <!-- Contenido Principal -->
             <main class="seccion-galeria">
+                <!-- Seccion Galeria de imagenes y boton -->
                 <div id="galeria"></div>
                 <button id="boton">Cambiar Diseño</button>
+
+                <!-- Seccion Formulario de Gestion -->
+                <section class="columna">
+                    <h1 class="titulo">Gestión de Producción</h1>
+                    <p class="subtitulo-form">Complete el formulario para calcular los costos y tiempos de producción.</p>
+                    
+                    <form id="form-instalaciones">
+                        <div class="campo-form">
+                            <label for="cant-instalaciones">Cantidad total de instalaciones:</label>
+                            <input type="number" id="cant-instalaciones" min="1">
+                        </div>
+
+                        <div class="campo-form">
+                            <label for="nombre">Nombre de la instalación:</label>
+                            <input type="text" id="nombre">
+                        </div>
+
+                        <div class="campo-form">
+                            <label for="personas">Cantidad de personas necesarias:</label>
+                            <input type="number" id="personas" min="0">
+                        </div>
+
+                        <div class="campo-form">
+                            <label for="dias">Días estimados de producción:</label>
+                            <input type="number" id="dias" min="0">
+                        </div>
+
+                        <div class="campo-form">
+                            <label for="horas-dia">Horas de trabajo por día:</label>
+                            <input type="number" id="horas-dia" min="0" step="any">
+                        </div>
+
+                        <div class="campo-form">
+                            <label for="honorario">Valor del honorario por hora ($):</label>
+                            <input type="number" id="honorario" min="0" step="any">
+                        </div>
+
+                        <div class="botones-accion">
+                            <button type="button" id="btn-agregar">Cargar Instalación</button>
+                            <button type="button" id="btn-calcular" disabled>Calcular Producción</button>
+                            <button type="button" id="btn-reiniciar" disabled>Reiniciar Sistema</button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Contenedor de resultados -->
+                <div id="area-resultados"></div>
             </main>
-            <!--Pie de pagina-->
+
+            <!-- Pie de página -->
             <footer class="pie-de-pagina">
-                <address>@ 2026 Sitio biográfico sobre Casey Reas</address>
-                </footer>
+                <address>@2026 Sitio biográfico sobre Casey Reas</address>
+            </footer>
         </div>
         <script src="js/script-galeria.js"></script>
     </body>
-    </html>
+</html>
